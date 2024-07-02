@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 25px;
+    color: rgb(81, 161, 236);
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #e7f3ff;
+    border-radius: 5px;
+}
+
+.appointment-section {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.appointment-section h2 {
+    margin-bottom: 20px;
+    color: rgb(81, 161, 236);
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment-form label {
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #333;
+}
+
+.appointment-form input, .appointment-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.appointment-form input:focus, .appointment-form select:focus {
+    outline: none;
+    border-color: rgb(81, 161, 236);
+}
+
+.appointment-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.appointment-form button:hover {
+    background-color: rgb(81, 161, 236);
+}

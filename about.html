@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us & Testimonials - Klinik Kecantikan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: rgb(81, 161, 236);
+            --text-color: #333;
+            --light-text-color: #666;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .about-section img {
+            width: 50%;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .about-section .content {
+            flex: 1;
+        }
+
+        .about-section .content h3 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .about-section .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-section .content .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .about-section .content .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .doctor-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .doctor {
+            width: 30%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .doctor img {
+            width: 70%;
+            max-width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .doctor h2 {
+            color: #007bff;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .doctor h3 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .doctor p {
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .testimonial-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .content-container {
+            flex: 1;
+            padding: 20px;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .testimonials-wrapper {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+
+        .testimonials {
+            display: flex;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .expert {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 10px;
+        }
+
+        .author {
+            color: var(--light-text-color);
+            font-style: italic;
+        }
+
+        .nav-buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .nav-button {
+            background-color: var(--primary-color);
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image-container, .content-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About</h1>
+    </header>
+    <div class="container">
+        <div class="about-section">
+            <img src="images/gambar 1.webp" alt="Beauty Clinic">
+            <div class="content">
+                <h3>Kesehatan Dan Kecantikan wajah Anda</h3>
+                <p>Di Fisya Clinic, kami berkomitmen untuk membantu Anda meraih kecantikan dan kesehatan yang autentik. Kami mengerti bahwa kecantikan sejati berasal dari kesehatan yang baik, dan itulah yang menjadi fokus utama kami. Sebagai pusat kesehatan dan kecantikan, kami menyediakan layanan yang menyeluruh untuk memenuhi kebutuhan kecantikan dan kesehatan Anda.</p>
+                <a href="service.html" class="btn">Services</a>
+            </div>
+        </div>
+
+        <div class="doctor-section">
+            <div class="doctor">
+                <img src="images/dokter 2.jpg" alt="Dr. Fisya">
+                <h2>Dr. Fisya</h2>
+                <h3>Dokter Kecantikan</h3>
+                <p>Dr. Fisya adalah seorang dokter kecantikan berpengalaman dengan spesialisasi dalam perawatan kulit dan prosedur kecantikan non-bedah. Dengan keahliannya, Dr. Fisya siap membantu Anda mencapai penampilan terbaik Anda.</p>
+            </div>
+            <div class="doctor">
+                <img src="images/dokter 3.jpg" alt="Dr. Nawwar">
+                <h2>Dr. Nawwar</h2>
+                <h3>Dokter Bedah Plastik</h3>
+                <p>Dr. Nawwar adalah ahli bedah plastik dengan pengalaman luas dalam prosedur bedah dan non-bedah untuk memperbaiki dan meningkatkan penampilan. Beliau berdedikasi untuk memberikan hasil yang alami dan memuaskan bagi setiap pasien.</p>
+            </div>
+            <div class="doctor">
+                <img src="images/dokter 4.jpg" alt="Dr. Emily">
+                <h2>Dr. Emily</h2>
+                <h3>Dokter Kulit</h3>
+                <p>Dr. Emily memiliki keahlian khusus dalam dermatologi dan perawatan kulit. Dengan pendekatan yang holistik, beliau berfokus pada kesehatan kulit secara keseluruhan untuk memastikan setiap pasien merasa percaya diri dengan kulit mereka.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-container">
+        <div class="image-container">
+            <img src="images/komen.png" alt="Interior Klinik Kecantikan">
+        </div>
+        <div class="content-container">
+            <h1>Apa yang mereka katakan tentang kita</h1>
+            <div class="testimonials-wrapper">
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>Saya sangat beruntung bisa melakukan perawatan wajah tanpa rasa sakit, semua berkat Dr. Nafisya Husna. Saya pasti akan merekomendasikan untuk melakukannya kepada seluruh tim.</p>
+                        <p class="author">- Anisa Putri</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="expert">Expert doctors!</p>
+                        <p>Pelayanan yang luar biasa dan hasil yang memuaskan.</p>
+                        <p class="author">- Tania Humaira</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>Kami bertemu Dr. Nafisya Husna untuk perawatan pada kulit wajah saya. Dia yang terbaik di kota untuk semua masalah yang berkaitan dengan perawatan kulit.</p>
+                        <p class="author">- Budi Santoso</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>Pengalaman yang sangat menyenangkan. Staf yang ramah dan profesional.</p>
+                        <p class="author">- Dewi Lestari</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>Hasil perawatan yang luar biasa. Kulit saya terlihat jauh lebih cerah dan sehat.</p>
+                        <p class="author">- Rudi Hartono</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-button" onclick="moveTestimonial(-1)">&#8249; Prev</button>
+                <button class="nav-button" onclick="moveTestimonial(1)">Next &#8250;</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Klinik Kecantikan. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let currentTestimonial = 0;
+        const testimonials = document.querySelector('.testimonials');
+        const totalTestimonials = document.querySelectorAll('.testimonial').length;
+
+        function moveTestimonial(direction) {
+            currentTestimonial += direction;
+            if (currentTestimonial < 0) {
+                currentTestimonial = totalTestimonials - 1;
+            } else if (currentTestimonial >= totalTestimonials) {
+                currentTestimonial = 0;
+            }
+            testimonials.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Clinic Fisya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTcN0P4D2tpC2ERzImsV7z4y9gQ3WgMx3oWrc4ZbVN2ytVZ5r9qqkNj7+9p9jICMdDkYLzqtfOZSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-size: 25px;
+            color: rgb(81, 161, 236);
+            font-weight: bold;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+        header nav a:hover {
+            background-color: #e7f3ff;
+            border-radius: 5px;
+        }
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('images/gambar\ 2.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 150px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            margin-top: 60px;
+        }
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .banner-content {
+            position: relative;
+            z-index: 2;
+        }
+        .banner h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .banner a {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .banner a:hover {
+            background-color: rgb(81, 161, 236);
+        }
+        .info-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+        .info-box {
+            background-color: #f7f7f7;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            margin: 10px;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+        .info-box:hover {
+            transform: translateY(-10px);
+        }
+        .info-box i {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #c59d1f;
+        }
+        .info-box h3 {
+            margin-bottom: 15px;
+            color: black;
+        }
+        .info-box p {
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        .info-box .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .info-box .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .info-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .info-box {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+            .banner h1 {
+                font-size: 36px;
+            }
+            .banner p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Fisya Clinic</div>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="appointment.html">Appointment</a>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Perawatan Kulit Terbaik untuk Anda.</h1>
+            <p>Selamat datang di Klinik Kecantikan kami, di mana perawatan kulit terbaik bertemu dengan teknologi canggih untuk memberikan Anda penampilan yang lebih segar, sehat, dan bersinar setiap hari.</p>
+
+        </div>
+    </div>
+    <div class="info-section" id="about">
+        <div class="info-box">
+            <i class="fas fa-hospital"></i>
+            <h3>Online Appointment</h3>
+            <p>Dapatkan dukungan Sepanjang Waktu dan pesan janji temu Anda dari mana saja, di kapan pun.</p>
+            <a href="appointment.html" class="button">MAKE AN APPOINTMENT</a>
+        </div>
+        <div class="info-box" id="service">
+            <i class="fas fa-clock"></i>
+            <h3>Jam Kerja</h3>
+            <p>Senin - Sabtu: 08:00 am - 17:00 pm</p>
+            <p>Minggu: Tutup</p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-headset"></i>
+            <h3>hubungi lebih lanjut</h3>
+            <p>Untuk informasi lebih lanjut, silakan hubungi contact kami.</p>
+            <a href="contact.html" class="button">Contact us</a>
+
+        </div>
+    </div>
+    <footer id="contact">
+        <p>&copy; 2024 Klinik Kecantikan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
